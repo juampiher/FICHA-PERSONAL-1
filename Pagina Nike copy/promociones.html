@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promociones – NIKE</title>
+  <link rel="stylesheet" href="CSS/estiloprincipal.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="barra">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="novedades.html">Novedades</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <h1>Promociones Vigentes</h1>
+
+    <section class="promo-lista">
+      <article class="promo-card">
+        <h3>🔥 Promo 1</h3>
+        <p>Llevá 2 productos y obtené <strong>50% de descuento</strong> en el segundo.</p>
+      </article>
+
+      <article class="promo-card">
+        <h3>⚡ Promo 2</h3>
+        <p>Aprovechá el <strong>3x2</strong> en productos seleccionados.</p>
+      </article>
+
+      <article class="promo-card">
+        <h3>🏷️ Promo 3</h3>
+        <p>Obtené un <strong>10% OFF</strong> en compras superiores a <strong>$30.000</strong>.</p>
+      </article>
+    </section>
+
+    <h2>Calculá tu descuento</h2>
+
+    <form>
+      <label>Precio del producto:</label><br>
+      <input type="number" id="precio" placeholder="Ej: 150000"><br><br>
+
+      <label>Cantidad:</label><br>
+      <input type="number" id="cantidad" placeholder="Ej: 2"><br><br>
+
+      <label>Promoción:</label><br>
+      <select id="promo">
+        <option value="2x50">2x50 (50% en el segundo)</option>
+        <option value="3x2">3x2 (pagás 2)</option>
+        <option value="10off">10% OFF</option>
+      </select><br><br>
+
+      <button type="button" id="calcular">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="total"></p>
+    <p id="descuento"></p>
+    <p id="final"></p>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__fila">
+      <img src="img/logo.png" alt="Logo" class="logo-footer">
+      <div class="redes">
+        <a href="#">X</a>
+        <a href="#">IG</a>
+        <a href="#">YT</a>
+        <a href="#">in</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 📦 Vinculación del archivo JS -->
+  <script src="promociones.js"></script>
+
+</body>
+</html>
