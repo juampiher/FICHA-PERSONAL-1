@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Nexo - Convergencia y Dinamismo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="encabezado-principal">
+        <div class="logo">
+            <a href="#inicio" aria-label="Ir a la página de inicio de El Nexo">
+                <img src="img/logonexo.jpg" alt="Logotipo de El Nexo" class="logo-imagen"> 
+                <span class="logo-texto visualmente-oculto">El Nexo</span>
+            </a>
+        </div>
+        <nav aria-label="Navegación principal del sitio">
+            <ul class="lista-navegacion">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#entretenimientos">Entretenimientos</a></li>
+                <li><a href="#locales">Locales Comerciales</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#gastronomia">Gastronomía</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion-hero">
+            <div class="contenido-hero">
+                <h1 class="visualmente-oculto">El Nexo - Open Mall</h1>
+                <p class="slogan">Convergencia y Dinamismo</p>
+                <h2>Tu Punto de Encuentro en la Zona Sur</h2>
+                <p class="texto-descripcion">El Nexo es un Open Mall estratégicamente ubicado en el polo tecnológico de la Ciudad de Buenos Aires. Nuestro diseño prioriza zonas verdes y arquitectura abierta, invitando a la comunidad a conectar.</p>
+                
+                <div class="funcionalidad-sitio">
+                    <p><strong>¿Qué puedes hacer en nuestro sitio?</strong></p>
+                    <ul>
+                        <li><a href="#locales">Localiza tu comercio favorito</a> con nuestro mapa interactivo o buscador dinámico.</li>
+                        <li>Explora nuestros <a href="#entretenimientos">espacios recreativos</a> y culturales.</li>
+                        <li>Mantente al día con las últimas <a href="#ofertas">promociones y descuentos</a>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contenedor-video">
+                <video controls muted loop playsinline poster="placeholder-imagen-video.jpg" aria-label="Video de presentación del centro comercial El Nexo.">
+                    <source src="vid/Centro_Comercial_al_Atardecer_Video_Generado.mp4" type="video/mp4">
+                    <p>Tu navegador no soporta el elemento de video. Puedes ver el video <a href="vid/Centro_Comercial_al_Atardecer_Video_Generado.mp4">aquí</a>.</p>
+                </video>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros Servicios y Comodidades</h2>
+            <p>Diseñamos El Nexo para ofrecerte una experiencia cómoda y completa. Estos son algunos de los servicios que garantizan tu bienestar durante tu visita:</p>
+
+            <div class="servicios-rejilla">
+                <article class="tarjeta-servicio">
+                    <h3>Estacionamiento Subterráneo</h3>
+                    <p>Amplio estacionamiento cubierto con más de 500 plazas. Acceso directo a todos los niveles.</p>
+                    <a href="#" class="enlace-llamada">Ver Tarifas</a>
+                </article>
+                
+                <article class="tarjeta-servicio">
+                    <h3>Wifi Gratuito de Alta Velocidad</h3>
+                    <p>Mantente conectado con nuestra red gratuita en todo el Open Mall.</p>
+                    <a href="#" class="enlace-llamada">Conectar</a>
+                </article>
+
+                <article class="tarjeta-servicio">
+                    <h3>Puntos de Recarga (Charging Points)</h3>
+                    <p>Estaciones de carga para vehículos eléctricos y enchufes USB en áreas de descanso.</p>
+                    <a href="#" class="enlace-llamada">Ubicación</a>
+                </article>
+
+                <article class="tarjeta-servicio">
+                    <h3>Pet Friendly</h3>
+                    <p>¡Tus mascotas son bienvenidas! Contamos con bebederos y zonas de paseo designadas.</p>
+                    <a href="#" class="enlace-llamada">Normativa</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="locales" aria-labelledby="locales-titulo">
+            <h2 id="locales-titulo">Directorio de Locales Comerciales</h2>
+            <p>Encuentra fácilmente el comercio que buscas y visita su sitio web individual.</p>
+
+            <div class="contenedor-busqueda">
+                <label for="buscador-tienda" class="visualmente-oculto">Buscar local por nombre:</label>
+                <input type="text" id="buscador-tienda" placeholder="Busca por nombre (ej: Nike)" aria-label="Buscador de locales comerciales">
+                <button type="button">Buscar</button>
+            </div>
+
+            <div class="mapa-marcador" id="mapa-marcador" role="img" aria-label="Mapa interactivo del centro comercial El Nexo.">
+                [Mapa Interactivo del Centro Comercial]
+                <p class="mapa-leyenda">El mapa interactivo indicará la ubicación exacta de los locales.</p>
+            </div>
+
+            <div class="lista-tiendas" id="resultados-tiendas">
+                
+                <article class="tarjeta-local" data-nombre="Nike" data-numero="1">
+                    <h3>Nike (Local N° 1)</h3>
+                    <p>Artículos deportivos y moda urbana.</p>
+                    <a href="https://juampiher.github.io/Entrega-19-10/index.html" target="_blank" class="enlace-llamada">Ir a la web de Nike</a>
+                </article>
+                
+                <article class="tarjeta-local" data-nombre="Hydrapet" data-numero="2">
+                    <h3>Hydrapet (Local N° 2)</h3>
+                    <p>Productos y servicios para mascotas.</p>
+                    <a href="https://gabrielzubiaurre.github.io/Local-Comercial---HydraPet/" target="_blank" class="enlace-llamada">Ir a la web de Hydrapet</a>
+                </article>
+                
+                <article class="tarjeta-local" data-nombre="Bonanno" data-numero="3">
+                    <h3>Bonanno (Local N° 3)</h3>
+                    <p>Barbería, peluquería y servicios de estética.</p>
+                    <a href="https://augussossich.github.io/localcentrocomercial/" target="_blank" class="enlace-llamada">Ir a la web de Bonanno</a>
+                </article>
+
+                <article class="tarjeta-local" data-nombre="Aureon" data-numero="4">
+                    <h3>Aureon (Local N° 4)</h3>
+                    <p>Tienda de moda y accesorios.</p>
+                    <a href="https://baltaagarcia.github.io/aureola-js/index.html" target="_blank" class="enlace-llamada">Ir a la web de Aureon</a>
+                </article>
+                
+                <article class="tarjeta-local" data-nombre="Ronda" data-numero="5">
+                    <h3>Ronda (Local N° 5)</h3>
+                    <p>Bebidas, tragos y ambiente ideal para una ronda con amigos.</p>
+                    <a href="https://gulma02.github.io/mi-local-uade/" target="_blank" class="enlace-llamada">Ir a la web de Ronda</a>
+                </article>
+                
+            </div>
+        </section>
+        
+        <section id="entretenimientos">
+            <h2>Espacios Recreativos y Culturales</h2>
+            <p>El Nexo es más que compras; es un centro de actividad social y cultural. Descubre nuestras áreas dedicadas a la diversión y el arte.</p>
+            
+            <div class="entretenimientos-rejilla">
+                <div class="caja-caracteristica">
+                    <h3>Zona de Juegos Infantiles (Play Zone)</h3>
+                    <p>Un espacio al aire libre, seguro y moderno, diseñado para que los más pequeños interactúen y se diviertan bajo la supervisión de adultos. Fieles a nuestro diseño Open Mall, se integra con las zonas verdes.</p>
+                    <a href="#" class="enlace-llamada">Ver Horarios</a>
+                </div>
+
+                <div class="caja-caracteristica">
+                    <h3>Anfiteatro al Aire Libre</h3>
+                    <p>Nuestro centro cultural donde se celebran eventos, conciertos, proyecciones de cine y talleres comunitarios. Consulta el calendario para no perderte las próximas actividades.</p>
+                    <a href="#eventos-calendar" class="enlace-llamada">Calendario de Eventos</a>
+                </div>
+
+                <div class="caja-caracteristica">
+                    <h3>Galería de Arte Urbana</h3>
+                    <p>Muros y espacios dedicados a exhibiciones rotativas de artistas locales y emergentes. Promovemos la conexión entre la comunidad y las nuevas tendencias artísticas.</p>
+                    <a href="#" class="enlace-llamada">Conoce a los Artistas</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas">
+            <h2>Ofertas y Promociones Destacadas</h2>
+            <p>Aprovecha los descuentos exclusivos y beneficios bancarios para tus compras en todos los locales adheridos de El Nexo.</p>
+
+            <div class="ofertas-rejilla">
+                <article class="tarjeta-oferta banco-icbc">
+                    <div class="encabezado-oferta">
+                        <h3>ICBC - Ahorro en Compras</h3>
+                        <img src="img/icbc-logo.png" alt="Logo del banco ICBC" class="logo-banco">
+                    </div>
+                    <div class="cuerpo-oferta">
+                        <p class="texto-resaltado">Hasta **40% de Ahorro**</p>
+                        <p>Beneficio Exclusivo para clientes Exclusive Banking.</p>
+                    </div>
+                    <a href="#" class="enlace-llamada llamada-banco">Ver Bases y Condiciones</a>
+                </article>
+
+                <article class="tarjeta-oferta banco-santander">
+                    <div class="encabezado-oferta">
+                        <h3>Santander - Súper Miércoles</h3>
+                        <img src="img/santander-logo.png" alt="Logo del banco Santander" class="logo-banco">
+                    </div>
+                    <div class="cuerpo-oferta">
+                        <p class="texto-resaltado">Hasta **35% de Reintegro**</p>
+                        <p>Si cobrás tu sueldo en el banco + 20% con MODO.</p>
+                    </div>
+                    <a href="#" class="enlace-llamada llamada-banco">Ver Sucursales Adheridas</a>
+                </article>
+
+                <article class="tarjeta-oferta promocion-general">
+                    <div class="encabezado-oferta">
+                        <h3>6 Cuotas Sin Interés</h3>
+                    </div>
+                    <div class="cuerpo-oferta">
+                        <p class="texto-resaltado">En Locales de Indumentaria</p>
+                        <p>Válido para todas las tarjetas de crédito. Consultar locales adheridos.</p>
+                    </div>
+                    <a href="#" class="enlace-llamada">Ver Locales</a>
+                </article>
+            </div>
+        </section>
+        
+        <section id="gastronomia">
+            <h2>Zona de Gastronomía</h2>
+            <p>Un espacio abierto con opciones variadas para todos los paladares, desde comidas rápidas hasta experiencias gourmet.</p>
+
+            <div class="gastronomia-rejilla">
+                <article class="tarjeta-comida">
+                    <img src="img/cafe.png" alt="Cafetería moderna con repostería artesanal, Café Nexo." class="imagen-comida">
+                    <h3>Café Nexo</h3>
+                    <p>Cafetería moderna con repostería artesanal y la mejor selección de café de especialidad.</p>
+                    <a href="#" class="enlace-llamada">Ver Menú</a>
+                </article>
+                
+                <article class="tarjeta-comida">
+                    <img src="img/parrilla.png" alt="Restaurante de carnes asadas a la parrilla, Parrilla del Sur." class="imagen-comida">
+                    <h3>Parrilla del Sur</h3>
+                    <p>Sabores argentinos. Las mejores carnes asadas y guarniciones, ideal para una cena en familia.</p>
+                    <a href="#" class="enlace-llamada">Ver Menú</a>
+                </article>
+
+                <article class="tarjeta-comida">
+                    <img src="img/fresh.png" alt="Local de comida rápida y saludable, Fresh & Quick." class="imagen-comida">
+                    <h3>Fresh & Quick</h3>
+                    <p>Opciones saludables, ensaladas personalizadas y jugos naturales. Rápido y nutritivo.</p>
+                    <a href="#" class="enlace-llamada">Ver Menú</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-contacto">
+            <h2>Contáctanos</h2>
+            <p>Envíanos tu consulta a través del formulario. También puedes escribirnos a <a href="mailto:contacto@elnexo.com">contacto@elnexo.com</a>.</p>
+            
+            <div class="info-contacto">
+                <h3>Nuestra Ubicación</h3>
+                <p>📍 Av. Caseros 2517, CABA</p>
+                <a href="https://www.google.com/maps/place/Av.+Caseros+2517,+C1264AAF+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.635576,-58.4004364,928m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95bccb16f3af675f:0x7e3fd231f3f0bbf2!8m2!3d-34.6355804!4d-58.3978615!16s%2Fg%2F11k2bdm7pq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="enlace-llamada">Ver en Google Maps</a>
+            </div>
+
+            <div class="contenedor-formulario amplio">
+                <h3>Formulario de Contacto</h3>
+                <form action="#" method="POST" class="formulario-contacto">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required aria-required="true">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required aria-required="true">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="general">Consulta General</option>
+                            <option value="locales">Información de Locales</option>
+                            <option value="eventos">Eventos y Actividades</option>
+                        </select>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="boton-llamada">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 El Nexo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

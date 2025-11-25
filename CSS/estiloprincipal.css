@@ -1,0 +1,128 @@
+:root{
+  --bg: #001b09;           
+  --surface: rgba(0,0,0,0.55);
+  --text: #ffffff;
+  --accent: #23a455;       
+  --muted: #1e3327;        
+}
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat fixed,
+    var(--bg);
+}
+
+.encabezado, .contenido, .pie{
+  max-width: 980px;
+  margin: 16px auto;
+  background: var(--surface);
+  border: 1px solid var(--muted);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.titulo{
+  margin: 0;
+}
+
+.btn{
+  background: #0f7a3a;
+  color: #fff;
+  border: 1px solid #0e6a34;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover{ filter: brightness(1.1); }
+
+.perfil{
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.perfil__foto{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.perfil__datos p{ margin: 6px 0; }
+
+.presentacion{
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.bloque + .bloque{ margin-top: 16px; }
+h2{ margin: 0 0 8px 0; }
+
+.links{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.link{
+  display: inline-block;
+  background: #0c5d2c;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #0b5227;
+}
+.link:hover{ filter: brightness(1.1); }
+
+.lista{
+  margin: 8px 0 0 16px;
+}
+
+.pie{
+  text-align: center;
+}
+
+body.claro{
+  color: #111;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+    url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat fixed,
+    #e9f3ec;
+}
+body.claro .encabezado,
+body.claro .contenido,
+body.claro .pie{
+  background: rgba(255,255,255,0.9);
+  border-color: #cfe2d7;
+}
+body.claro .btn{
+  background: #e8f5ed;
+  color: #0c5d2c;
+  border-color: #b8d8c7;
+}
+body.claro .link{
+  background: #e8f5ed;
+  color: #0c5d2c;
+  border-color: #b8d8c7;
+}
+
+@media (max-width: 640px){
+  .perfil{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .links{
+    flex-direction: column;
+  }
+}
